@@ -1,0 +1,116 @@
+.servicios {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduccion__container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    width: 50%;
+}
+
+.introduccion__container h2 {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: initial;
+}
+
+.introduccion__container h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: initial;
+}
+
+.introduccion__grid__container {
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+    grid-row-gap: 3rem;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.torno {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.fresado {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.mantenimiento {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.soldadura {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.soporte {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.grid__section {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid__section__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__section__header h1 {
+    font-weight: initial;
+}
+
+.grid__section__header img {
+    height: 50px;
+}
+
+@media (max-width:875px) {
+    .introduccion__grid__container {
+        grid-column-gap: 4rem;
+    }
+}
+
+@media (max-width:800px) {
+    .introduccion__grid__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid__section {
+        margin-bottom: 50px;
+        width: 400px;
+    }
+    .introduccion__container {
+        width: 80%;
+    }
+}
+
+@media (max-width:460px) {
+    .grid__section {
+        margin-bottom: 50px;
+        width: 250px;
+    }
+    .introduccion__container h2 {
+        font-size: 15px;
+    }
+    .introduccion__container h1 {
+        font-size: 24px;
+    }
+}

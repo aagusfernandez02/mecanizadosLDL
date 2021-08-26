@@ -1,0 +1,14 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #35A545;
+    --primary-light: #4cd861;
+    --secondary: #2E403B;
+    --secondary-dark: #161F1C;
+    --dark: #101011;
+}
